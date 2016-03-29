@@ -34,36 +34,55 @@ var round1 = [
   [2, 15]
 ];
 var round2 = [];
-for (i = 0; i < round1.length; i++) {
-  var bitCombos = [];
-  for (j = 0; j < 256; j++) {
-    var binRep = dec2bin(j);
-    if (binRep.length < 8) {
-      padZeroes = "0".repeat(8 - binRep.length);
-      binRep = padZeroes + binRep;
-    };
-    bitCombos.push(binRep);
+
+function pairs(arr) {
+  var groups = [],
+    i;
+  for (i = 0; i < arr.length; i += 2) {
+    groups.push(arr.slice(i, i + 2));
+  }
+  return groups;
+}
+
+function roundResults(startTeams) {
+  var endTeams = [];
+  for (i = 0; i < startTeams.length; i++) {
+    var bitCombos = [];
+    var comboNum = Math.pow(2, startTeams.length);
+    for (j = 0; j < comboNum; j++) {
+      var binRep = dec2bin(j);
+      if (binRep.length < startTeams.length) {
+        padZeroes = "0".repeat(startTeams.length - binRep.length);
+        binRep = padZeroes + binRep;
+      };
+      bitCombos.push(binRep);
+    }
+
   }
 
-}
-
-for (k = 0; k < bitCombos.length; k++) {
-  var possibleR1Result = [];
-  for (l = 0; l < bitCombos[k].length; l++) {
-    var matchResult = round1[l];
-    possibleR1Result.push(matchResult[parseInt(bitCombos[k][l])]);
+  for (k = 0; k < bitCombos.length; k++) {
+    var possibleR1Result = [];
+    for (l = 0; l < bitCombos[k].length; l++) {
+      var matchResult = round1[l];
+      possibleR1Result.push(matchResult[parseInt(bitCombos[k][l])]);
+    }
+    endTeams.push(possibleR1Result);
   }
-  round2.push(possibleR1Result);
+  return endTeams;
+}
+round2 = roundResults(round1);
+
+var round2Pairs = round2.map(function(teamList) {
+  return pairs(teamList)
+});
+
+var round3 = []
+for (m = 0; m < round2Pairs.length; m++) {
+  console.log(m);
+  var round2Result = [];
+  round2Result = roundResults(round2Pairs[m]);
+  round3.push(round2Result);
 }
 
-var groups = arr.map( function(e,i,chunkSize){
-    return i%chunkSize===0 ? arr.slice(i,i+chunkSize) : null;
-}).filter(function(e){ return e; });
 
-for(j=0;j<round2.length;j++){
-
-}
-
-
-console.log(round2);
-console.log(round2.length)
+console.log(round3);

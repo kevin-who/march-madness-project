@@ -63,7 +63,7 @@ function roundResults(startTeams) {
   for (k = 0; k < bitCombos.length; k++) {
     var possibleR1Result = [];
     for (l = 0; l < bitCombos[k].length; l++) {
-      var matchResult = round1[l];
+      var matchResult = startTeams[l];
       possibleR1Result.push(matchResult[parseInt(bitCombos[k][l])]);
     }
     endTeams.push(possibleR1Result);
@@ -77,12 +77,12 @@ var round2Pairs = round2.map(function(teamList) {
 });
 
 var round3 = []
+
 for (m = 0; m < round2Pairs.length; m++) {
   console.log(m);
   var round2Result = [];
   round2Result = roundResults(round2Pairs[m]);
   round3.push(round2Result);
 }
-
 
 console.log(round3);

@@ -1,3 +1,6 @@
+var util = require('util');
+var startDate = new Date();
+var startTime = startDate.getTime();
 var combine = function(a) {
   var fn = function(n, src, got, all) {
     if (n == 0) {
@@ -76,7 +79,7 @@ var round2Pairs = round2.map(function(teamList) {
   return pairs(teamList)
 });
 
-var round3 = []
+var round3 = [];
 
 for (m = 0; m < round2Pairs.length; m++) {
   console.log(m);
@@ -85,4 +88,17 @@ for (m = 0; m < round2Pairs.length; m++) {
   round3.push(round2Result);
 }
 
-console.log(round3);
+var round3Pairs = round3.map(function(teamList) {
+  var subPair = teamList.map(function(teams) {
+    return pairs(teams);
+  });
+  return subPair;
+});
+
+
+console.log(round3[0]);
+console.log(util.inspect(round3Pairs, false, null));
+
+endDate = new Date();
+var endTime = endDate.getTime();
+console.log("\n  Total time elapsed:" + (endTime - startTime) / 1000 + "s\n");

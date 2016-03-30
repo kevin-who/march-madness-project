@@ -39,7 +39,17 @@ function pairs(arr) {
   }
   return groups;
 }
-
+Array.prototype.flatten = function() {
+    var ret = [];
+    for(var i = 0; i < this.length; i++) {
+        if(Array.isArray(this[i])) {
+            ret = ret.concat(this[i].flatten());
+        } else {
+            ret.push(this[i]);
+        }
+    }
+    return ret;
+};
 function roundResults(startTeams) {
   var endTeams = [];
   for (i = 0; i < startTeams.length; i++) {
@@ -88,11 +98,6 @@ var round2Pairs = round2.map(function(teamList) {
   return subPair;
 });
 
-console.log(util.inspect(round2Pairs, false, null));
-console.log("");
-console.log(util.inspect(round1, false, null));
-console.log("");
-console.log(util.inspect(round0, false, null));
 var round3 = [];
 
 for (o = 0; o<round2Pairs.length;o++){
@@ -103,6 +108,12 @@ for (o = 0; o<round2Pairs.length;o++){
   round3.push(matchBatch)
 }
 console.log(util.inspect(round3, false, null));
+console.log("")
+console.log(util.inspect(round2, false, null));
+console.log("");
+console.log(util.inspect(round1, false, null));
+console.log("");
+console.log(util.inspect(round0, false, null));
 //WRITE TO JSON FILE
 require('fs').writeFile(
 

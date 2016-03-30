@@ -26,17 +26,10 @@ var combine = function(a) {
 function dec2bin(dec) {
   return (dec >>> 0).toString(2);
 }
-var round1 = [
-  [1, 16],
-  [8, 9],
-  [5, 12],
-  [4, 13],
-  [6, 11],
-  [3, 14],
-  [7, 10],
-  [2, 15]
-];
-var round2 = [];
+var round0 = [1,16,8,9,5,12,4,13]
+//round0 = [1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15]
+var round0pairs = pairs(round0)
+var round1 = [];
 
 function pairs(arr) {
   var groups = [],
@@ -73,45 +66,49 @@ function roundResults(startTeams) {
   }
   return endTeams;
 }
-round2 = roundResults(round1);
+round1 = roundResults(round0pairs);
 
-var round2Pairs = round2.map(function(teamList) {
+var round1Pairs = round1.map(function(teamList) {
   return pairs(teamList)
 });
 
-var round3 = [];
+var round2 = [];
 
-for (m = 0; m < round2Pairs.length; m++) {
+for (m = 0; m < round1Pairs.length; m++) {
   //console.log(m);
-  var round2Result = [];
-  round2Result = roundResults(round2Pairs[m]);
-  round3.push(round2Result);
+  var round1Result = [];
+  round1Result = roundResults(round1Pairs[m]);
+  round2.push(round1Result);
 }
 
-var round3Pairs = round3.map(function(teamList) {
+var round2Pairs = round2.map(function(teamList) {
   var subPair = teamList.map(function(teams) {
     return pairs(teams);
   });
   return subPair;
 });
 
-console.log(util.inspect(round3Pairs, false, null));
-console.log(round3Pairs.length)
+console.log(util.inspect(round2Pairs, false, null));
+console.log("");
+console.log(util.inspect(round1, false, null));
+console.log("");
+console.log(util.inspect(round0, false, null));
+var round3 = [];
 
-var round4 = [];
-
-for (o = 0; o<round3Pairs.length;o++){
-  for (p=0;p<round3Pairs[o].length;p++){
-
+for (o = 0; o<round2Pairs.length;o++){
+  matchBatch = []
+  for (p=0;p<round2Pairs[o].length;p++){
+    matchBatch.push(roundResults(round2Pairs[o][p]))
   }
+  round3.push(matchBatch)
 }
-
+console.log(util.inspect(round3, false, null));
 //WRITE TO JSON FILE
 require('fs').writeFile(
 
     'combinations.json',
 
-    JSON.stringify(round3Pairs, null, 2),
+    JSON.stringify(round3, null, 2),
 
     function (err) {
         if (err) {

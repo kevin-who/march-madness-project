@@ -28,7 +28,7 @@ function dec2bin(dec) {
 }
 var round0 = [1,16,8,9,5,12,4,13]
 //round0 = [1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15]
-var round0pairs = pairs(round0)
+var round0Pairs = pairs(round0)
 var round1 = [];
 
 function pairs(arr) {
@@ -76,7 +76,7 @@ function roundResults(startTeams) {
   }
   return endTeams;
 }
-round1 = roundResults(round0pairs);
+round1 = roundResults(round0Pairs);
 
 var round1Pairs = round1.map(function(teamList) {
   return pairs(teamList)
@@ -107,13 +107,28 @@ for (o = 0; o<round2Pairs.length;o++){
   }
   round3.push(matchBatch)
 }
-console.log(util.inspect(round3, false, null));
-console.log("")
-console.log(util.inspect(round2, false, null));
-console.log("");
+
+function probabilities(pairedRound, results){
+  var probabilitiesArray = [];
+  for(q = 0;q<results.length;q++){
+    var probArray = []
+    for(r=0;r<results[q].length;r++){
+      var totalProb = pairedRound[r][0]+pairedRound[r][1]
+      probArray.push(String(totalProb - results[q][r])+"/"+totalProb)
+    }
+    probabilitiesArray.push(probArray)
+  }
+  return probabilitiesArray
+}
+
+// console.log(util.inspect(round3, false, null));
+// console.log("")
+// console.log(util.inspect(round2, false, null));
+// console.log("");
 console.log(util.inspect(round1, false, null));
 console.log("");
-console.log(util.inspect(round0, false, null));
+console.log(util.inspect(round0Pairs, false, null));
+console.log(probabilities(round0Pairs,round1))
 //WRITE TO JSON FILE
 require('fs').writeFile(
 

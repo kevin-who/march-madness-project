@@ -26,7 +26,8 @@ var combine = function(a) {
 function dec2bin(dec) {
   return (dec >>> 0).toString(2);
 }
-var round0 = [1,16,8,9,5,12,4,13]
+var round0 = [1,16,8,9]
+//round0 = [1,16,8,9,5,12,4,13]
 //round0 = [1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15]
 var round0Pairs = pairs(round0)
 var round1 = [];
@@ -81,6 +82,7 @@ round1 = roundResults(round0Pairs);
 var round1Pairs = round1.map(function(teamList) {
   return pairs(teamList)
 });
+//START ROUND 2
 
 var round2 = [];
 
@@ -97,44 +99,69 @@ var round2Pairs = round2.map(function(teamList) {
   });
   return subPair;
 });
+//END ROUND 2
 
-var round3 = [];
-
-for (o = 0; o<round2Pairs.length;o++){
-  matchBatch = []
-  for (p=0;p<round2Pairs[o].length;p++){
-    matchBatch.push(roundResults(round2Pairs[o][p]))
-  }
-  round3.push(matchBatch)
-}
-
+//START ROUND 3
+// var round3 = [];
+//
+// for (o = 0; o<round2Pairs.length;o++){
+//   matchBatch = []
+//   for (p=0;p<round2Pairs[o].length;p++){
+//     matchBatch.push(roundResults(round2Pairs[o][p]))
+//   }
+//   round3.push(matchBatch)
+// }
+//END ROUND 3
 function probabilities(pairedRound, results){
   var probabilitiesArray = [];
   for(q = 0;q<results.length;q++){
     var probArray = []
     for(r=0;r<results[q].length;r++){
       var totalProb = pairedRound[r][0]+pairedRound[r][1]
-      probArray.push(String(totalProb - results[q][r])+"/"+totalProb)
+      //STRING FRACTION
+      //probArray.push(String(totalProb - results[q][r])+"/"+totalProb)
+      //DECIMAL
+      probArray.push(String(totalProb - results[q][r])/totalProb)
     }
     probabilitiesArray.push(probArray)
   }
   return probabilitiesArray
 }
-
+function cumulativeProb(firstRound,secondRound){
+  var sum = 0;
+  for(t=0;t<secondRound.length;t++){
+    sum += firstRound[t][0]*firstRound[t][1]*secondRound[t][0];
+    console.log(firstRound[t][0]*firstRound[t][1]*secondRound[t][0])
+    sum += firstRound[t][0]*firstRound[t][1]*secondRound[t][1]
+    console.log(firstRound[t][0]*firstRound[t][1]*secondRound[t][1])
+  }
+  console.log(sum);
+}
+var round1Probs = []
+var round1Probs = probabilities(round0Pairs,round1)
+var round2Probs = []
+for(s = 0;s<round2.length;s++){
+  round2Probs.push(probabilities(round1Pairs[s],round2[s]))
+}
 // console.log(util.inspect(round3, false, null));
 // console.log("")
 // console.log(util.inspect(round2, false, null));
 // console.log("");
+
 console.log(util.inspect(round1, false, null));
 console.log("");
 console.log(util.inspect(round0Pairs, false, null));
-console.log(probabilities(round0Pairs,round1))
+console.log(util.inspect(round2, false, null));
+console.log(util.inspect(round1Pairs, false, null));
+console.log(util.inspect(round1Probs, false, null));
+console.log(util.inspect(round2Probs, false, null));
+cumulativeProb(round1Probs,round2Probs)
 //WRITE TO JSON FILE
 require('fs').writeFile(
 
     'combinations.json',
 
-    JSON.stringify(round3, null, 2),
+    JSON.stringify(round2, null, 2),
 
     function (err) {
         if (err) {

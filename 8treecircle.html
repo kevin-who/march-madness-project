@@ -37,7 +37,6 @@ var svg = d3.select("body").append("svg")
     .attr("height", diameter - 150)
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
-
 d3.json("https://raw.githubusercontent.com/kevin-who/march-madness-project/master/circle32768.json", function(error, root) {
   if (error) throw error;
 

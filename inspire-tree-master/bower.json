@@ -1,0 +1,26 @@
+{
+  "name": "inspire-tree",
+  "version": "1.4.3",
+  "homepage": "https://github.com/helion3/inspire-tree",
+  "authors": [
+    "Mike Botsko <botsko@gmail.com>"
+  ],
+  "description": "Inspired Javascript Tree UI Component",
+  "license": "MIT",
+  "main": "dist/inspire-tree.min.js",
+  "ignore": [
+    "demos",
+    "fonts",
+    "hooks",
+    "sample-data",
+    "src",
+    "test",
+    ".*",
+    "karma*",
+    "webpack*"
+  ],
+  "private": false,
+  "devDependencies": {
+    "angular": "~1.4.7"
+  }
+}

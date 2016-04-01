@@ -33,44 +33,110 @@
 <script>
 
 var treeData = [
-  {
-    "name": "Top Level",
-    "parent": "null",
-    "children": [
-      {
-        "name": "Level 2: A",
-        "parent": "Top Level",
-        "children": [
-          {
-            "name": "Son of A",
-            "parent": "Level 2: A"
-          },
-          {
-            "name": "Daughter of A",
-            "children": [
-              {
-                "name": "Son of A",
-                "parent": "Level 2: A"
-              },
-              {
-                "name": "Daughter of A",
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Level 2: B",
-        "parent": "Top Level"
-      }
-    ]
-  }
+  { name: '1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15',
+  children:
+   [ { name: '1,8,5,4',
+       children:
+        [ { name: '1,5', children: [ { name: '1' }, { name: '5' } ] },
+          { name: '1,4', children: [ { name: '1' }, { name: '4' } ] },
+          { name: '8,5', children: [ { name: '5' }, { name: '8' } ] },
+          { name: '8,4', children: [ { name: '4' }, { name: '8' } ] } ] },
+     { name: '1,8,5,13',
+       children:
+        [ { name: '1,5', children: [ { name: '1' }, { name: '5' } ] },
+          { name: '1,13', children: [ { name: '1' }, { name: '13' } ] },
+          { name: '8,5', children: [ { name: '5' }, { name: '8' } ] },
+          { name: '8,13', children: [ { name: '8' }, { name: '13' } ] } ] },
+     { name: '1,8,12,4',
+       children:
+        [ { name: '1,12', children: [ { name: '1' }, { name: '12' } ] },
+          { name: '1,4', children: [ { name: '1' }, { name: '4' } ] },
+          { name: '8,12', children: [ { name: '8' }, { name: '12' } ] },
+          { name: '8,4', children: [ { name: '4' }, { name: '8' } ] } ] },
+     { name: '1,8,12,13',
+       children:
+        [ { name: '1,12', children: [ { name: '1' }, { name: '12' } ] },
+          { name: '1,13', children: [ { name: '1' }, { name: '13' } ] },
+          { name: '8,12', children: [ { name: '8' }, { name: '12' } ] },
+          { name: '8,13', children: [ { name: '8' }, { name: '13' } ] } ] },
+     { name: '1,9,5,4',
+       children:
+        [ { name: '1,5', children: [ { name: '1' }, { name: '5' } ] },
+          { name: '1,4', children: [ { name: '1' }, { name: '4' } ] },
+          { name: '9,5', children: [ { name: '5' }, { name: '9' } ] },
+          { name: '9,4', children: [ { name: '4' }, { name: '9' } ] } ] },
+     { name: '1,9,5,13',
+       children:
+        [ { name: '1,5', children: [ { name: '1' }, { name: '5' } ] },
+          { name: '1,13', children: [ { name: '1' }, { name: '13' } ] },
+          { name: '9,5', children: [ { name: '5' }, { name: '9' } ] },
+          { name: '9,13', children: [ { name: '9' }, { name: '13' } ] } ] },
+     { name: '1,9,12,4',
+       children:
+        [ { name: '1,12', children: [ { name: '1' }, { name: '12' } ] },
+          { name: '1,4', children: [ { name: '1' }, { name: '4' } ] },
+          { name: '9,12', children: [ { name: '9' }, { name: '12' } ] },
+          { name: '9,4', children: [ { name: '4' }, { name: '9' } ] } ] },
+     { name: '1,9,12,13',
+       children:
+        [ { name: '1,12', children: [ { name: '1' }, { name: '12' } ] },
+          { name: '1,13', children: [ { name: '1' }, { name: '13' } ] },
+          { name: '9,12', children: [ { name: '9' }, { name: '12' } ] },
+          { name: '9,13', children: [ { name: '9' }, { name: '13' } ] } ] },
+     { name: '16,8,5,4',
+       children:
+        [ { name: '16,5', children: [ { name: '5' }, { name: '16' } ] },
+          { name: '16,4', children: [ { name: '4' }, { name: '16' } ] },
+          { name: '8,5', children: [ { name: '5' }, { name: '8' } ] },
+          { name: '8,4', children: [ { name: '4' }, { name: '8' } ] } ] },
+     { name: '16,8,5,13',
+       children:
+        [ { name: '16,5', children: [ { name: '5' }, { name: '16' } ] },
+          { name: '16,13', children: [ { name: '13' }, { name: '16' } ] },
+          { name: '8,5', children: [ { name: '5' }, { name: '8' } ] },
+          { name: '8,13', children: [ { name: '8' }, { name: '13' } ] } ] },
+     { name: '16,8,12,4',
+       children:
+        [ { name: '16,12', children: [ { name: '12' }, { name: '16' } ] },
+          { name: '16,4', children: [ { name: '4' }, { name: '16' } ] },
+          { name: '8,12', children: [ { name: '8' }, { name: '12' } ] },
+          { name: '8,4', children: [ { name: '4' }, { name: '8' } ] } ] },
+     { name: '16,8,12,13',
+       children:
+        [ { name: '16,12', children: [ { name: '12' }, { name: '16' } ] },
+          { name: '16,13', children: [ { name: '13' }, { name: '16' } ] },
+          { name: '8,12', children: [ { name: '8' }, { name: '12' } ] },
+          { name: '8,13', children: [ { name: '8' }, { name: '13' } ] } ] },
+     { name: '16,9,5,4',
+       children:
+        [ { name: '16,5', children: [ { name: '5' }, { name: '16' } ] },
+          { name: '16,4', children: [ { name: '4' }, { name: '16' } ] },
+          { name: '9,5', children: [ { name: '5' }, { name: '9' } ] },
+          { name: '9,4', children: [ { name: '4' }, { name: '9' } ] } ] },
+     { name: '16,9,5,13',
+       children:
+        [ { name: '16,5', children: [ { name: '5' }, { name: '16' } ] },
+          { name: '16,13', children: [ { name: '13' }, { name: '16' } ] },
+          { name: '9,5', children: [ { name: '5' }, { name: '9' } ] },
+          { name: '9,13', children: [ { name: '9' }, { name: '13' } ] } ] },
+     { name: '16,9,12,4',
+       children:
+        [ { name: '16,12', children: [ { name: '12' }, { name: '16' } ] },
+          { name: '16,4', children: [ { name: '4' }, { name: '16' } ] },
+          { name: '9,12', children: [ { name: '9' }, { name: '12' } ] },
+          { name: '9,4', children: [ { name: '4' }, { name: '9' } ] } ] },
+     { name: '16,9,12,13',
+       children:
+        [ { name: '16,12', children: [ { name: '12' }, { name: '16' } ] },
+          { name: '16,13', children: [ { name: '13' }, { name: '16' } ] },
+          { name: '9,12', children: [ { name: '9' }, { name: '12' } ] },
+          { name: '9,13', children: [ { name: '9' }, { name: '13' } ] } ] } ] }
 ];
 
 // ************** Generate the tree diagram  *****************
 var margin = {top: 20, right: 120, bottom: 20, left: 120},
- width = 960 - margin.right - margin.left,
- height = 500 - margin.top - margin.bottom;
+ width = screen.width*2,
+ height = screen.height*2;
 
 var i = 0;
 
@@ -110,7 +176,7 @@ function update(source) {
     return "translate(" + d.y + "," + d.x + ")"; });
 
   nodeEnter.append("circle")
-   .attr("r", 10)
+   .attr("r", 6)
    .style("fill", "#fff");
 
   nodeEnter.append("text")

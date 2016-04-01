@@ -8,7 +8,7 @@ function dec2bin(dec) {
 }
 var round0 = [1, 16, 8, 9]
 round0 = [1, 16, 8, 9, 5, 12, 4, 13]
-  //round0 = [1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15]
+round0 = [1,16,8,9,5,12,4,13,6,11,3,14,7,10,2,15]
 var round0Pairs = pairs(round0)
 var round1 = [];
 
@@ -79,26 +79,30 @@ var round1Pairs = round1.map(function(teamList) {
 
 for (var round0Match in resultsTree) {
 
-  keyArray = round0Match.split(",")
+  keyArray1 = round0Match.split(",")
 
-  round1Match = nullHash(roundResults(pairs(keyArray)));
+  round1Match = nullHash(roundResults(pairs(keyArray1)));
   for (var round2Match in round1Match){
-    keyArray = round2Match.split(",")
-    round3Match = nullHash(roundResults(pairs(keyArray)));
+    keyArray2 = round2Match.split(",")
+    round3Match = nullHash(roundResults(pairs(keyArray2)));
+    for (var round4Match in round3Match){
+      keyArray3 = round4Match.split(",")
+      round5Match = nullHash(roundResults(pairs(keyArray3)));
+      round3Match[round4Match] = round5Match;
+    }
     round1Match[round2Match] = round3Match;
   }
   resultsTree[round0Match] = round1Match
 }
 
-console.log(resultsTree)
-
+console.log(util.inspect(resultsTree, false, null));
 //console.log(resultsTree)
 //WRITE TO JSON FILE
 require('fs').writeFile(
 
-  'combinations.json',
+  'combinations32768.json',
 
-  JSON.stringify(round0, null, 2),
+  JSON.stringify(resultsTree, null, 2),
 
   function(err) {
     if (err) {

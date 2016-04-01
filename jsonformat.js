@@ -43,7 +43,7 @@ formatTree = [unformatTree]
 //WRITE TO JSON FILE
 require('fs').writeFile(
 
-  'tree32768.json',
+  'circle32768.json',
 
   JSON.stringify(formatTree, null, 2),
 

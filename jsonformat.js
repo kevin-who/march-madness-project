@@ -39,7 +39,7 @@ for (i = 0; i < unformatTree["children"].length; i++) {
   unformatTree["children"][i]["children"] = children1
   delete unformatTree["children"][i][Object.keys(unformatTree["children"][i])[0]];
 }
-formatTree = [unformatTree]
+formatTree = unformatTree
 //WRITE TO JSON FILE
 require('fs').writeFile(
 

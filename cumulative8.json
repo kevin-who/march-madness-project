@@ -1,0 +1,61 @@
+{
+  "name": "1,16,8,9",
+  "children": [
+    {
+      "name": "1,8",
+      "children": [
+        {
+          "name": "1",
+          "probability": 0.8888888888888888
+        },
+        {
+          "name": "8",
+          "probability": 0.1111111111111111
+        }
+      ],
+      "probability": 0.4982698961937716
+    },
+    {
+      "name": "1,9",
+      "children": [
+        {
+          "name": "1",
+          "probability": 0.9
+        },
+        {
+          "name": "9",
+          "probability": 0.1
+        }
+      ],
+      "probability": 0.4429065743944637
+    },
+    {
+      "name": "16,8",
+      "children": [
+        {
+          "name": "16",
+          "probability": 0.3333333333333333
+        },
+        {
+          "name": "8",
+          "probability": 0.6666666666666666
+        }
+      ],
+      "probability": 0.031141868512110725
+    },
+    {
+      "name": "16,9",
+      "children": [
+        {
+          "name": "16",
+          "probability": 0.36
+        },
+        {
+          "name": "9",
+          "probability": 0.64
+        }
+      ],
+      "probability": 0.02768166089965398
+    }
+  ]
+}

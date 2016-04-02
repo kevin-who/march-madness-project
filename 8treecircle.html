@@ -37,8 +37,12 @@ var svg = d3.select("body").append("svg")
     .attr("height", diameter - 150)
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+<<<<<<< HEAD
 
 d3.json("https://raw.githubusercontent.com/kevin-who/march-madness-project/master/circle128.json", function(error, root) {
+=======
+d3.json("https://raw.githubusercontent.com/kevin-who/march-madness-project/master/circle32768.json", function(error, root) {
+>>>>>>> gh-pages
   if (error) throw error;
 
   var nodes = tree.nodes(root),

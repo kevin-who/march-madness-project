@@ -23,7 +23,6 @@ function probabilities(start, results){
   }
   return probArray.reduce(function(a,b){return a*b;});
 }
-
 for(i=0;i<matchTree["children"].length;i++){
   round1 = matchTree["children"][i]
   round1["probability"]=probabilities(matchTree["name"],round1["name"])
@@ -42,7 +41,7 @@ for(i=0;i<matchTree["children"].length;i++){
 }
 require('fs').writeFile(
 
-  'cumulativeProb32768.json',
+  'cumulative32768.json',
 
   JSON.stringify(matchTree, null, 2),
 

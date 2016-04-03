@@ -1,0 +1,51 @@
+data = [
+  {
+    "name": "[1 vs 16],[8 vs 9]",
+    "children": [
+      {
+        "name": "[1 vs 8], probability = [16/17 × 9/17]",
+        "children": [
+          {
+            "name": "1, probability = [8/9]"
+          },
+          {
+            "name": "8, probability = [1/9]"
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 9], probability = [16/17 × 8/17]",
+        "children": [
+          {
+            "name": "1, probability = [9/10]"
+          },
+          {
+            "name": "9, probability = [1/10]"
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 8], probability = [1/17 × 9/17]",
+        "children": [
+          {
+            "name": "16, probability = [8/24]"
+          },
+          {
+            "name": "8, probability = [16/24]"
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 9], probability = [1/17 × 8/17]",
+        "children": [
+          {
+            "name": "16, probability = [9/25]"
+          },
+          {
+            "name": "9, probability = [16/25]"
+          }
+        ]
+      }
+    ]
+  }
+]

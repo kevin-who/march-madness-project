@@ -1,0 +1,343 @@
+[
+  {
+    "name": "[1 vs 16] [8 vs 9] [5 vs 12] [4 vs 13]",
+    "children": [
+      {
+        "name": "[1 vs 8] [5 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 8] [5 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 8] [12 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 8] [12 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 9] [5 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 9] [5 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 9] [12 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[1 vs 9] [12 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[1 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[1 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 8] [5 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 8] [5 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 8] [12 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 8] [12 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[8 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 9] [5 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 9] [5 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 5], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 9] [12 vs 4], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 4], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 4], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "[16 vs 9] [12 vs 13], probability = [NaN/NaN]",
+        "children": [
+          {
+            "name": "[16 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[16 vs 13], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 12], probability = [NaN/NaN]",
+            "children": []
+          },
+          {
+            "name": "[9 vs 13], probability = [NaN/NaN]",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

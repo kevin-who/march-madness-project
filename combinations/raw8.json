@@ -1,0 +1,32 @@
+data = [{
+  "name": "[1 vs 16],[8 vs 9]",
+  "children": [{
+    "name": "[1 vs 8]",
+    "children": [{
+      "name": "[1]"
+    }, {
+      "name": "[8]"
+    }]
+  }, {
+    "name": "[1 vs 9]",
+    "children": [{
+      "name": "[1]"
+    }, {
+      "name": "[9]"
+    }]
+  }, {
+    "name": "[16 vs 8]",
+    "children": [{
+      "name": "[16]"
+    }, {
+      "name": "[8]"
+    }]
+  }, {
+    "name": "[16 vs 9]",
+    "children": [{
+      "name": "[16]"
+    }, {
+      "name": "[9]"
+    }]
+  }]
+}]

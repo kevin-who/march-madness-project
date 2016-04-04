@@ -1,0 +1,997 @@
+{
+  "name": "1,16,8,9,5,12,4,13",
+  "children": [
+    {
+      "name": "1,8,5,4",
+      "children": [
+        {
+          "name": "1,5",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8333333333333334
+            },
+            {
+              "name": "5",
+              "probability": 0.16666666666666666
+            }
+          ],
+          "probability": 0.3950617283950617
+        },
+        {
+          "name": "1,4",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8
+            },
+            {
+              "name": "4",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.49382716049382713
+        },
+        {
+          "name": "8,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6153846153846154
+            },
+            {
+              "name": "8",
+              "probability": 0.38461538461538464
+            }
+          ],
+          "probability": 0.04938271604938271
+        },
+        {
+          "name": "8,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6666666666666666
+            },
+            {
+              "name": "8",
+              "probability": 0.3333333333333333
+            }
+          ],
+          "probability": 0.06172839506172839
+        }
+      ],
+      "probability": 0.2689622969073646
+    },
+    {
+      "name": "1,8,5,13",
+      "children": [
+        {
+          "name": "1,5",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8333333333333334
+            },
+            {
+              "name": "5",
+              "probability": 0.16666666666666666
+            }
+          ],
+          "probability": 0.6419753086419753
+        },
+        {
+          "name": "1,13",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9285714285714286
+            },
+            {
+              "name": "13",
+              "probability": 0.07142857142857142
+            }
+          ],
+          "probability": 0.24691358024691357
+        },
+        {
+          "name": "8,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6153846153846154
+            },
+            {
+              "name": "8",
+              "probability": 0.38461538461538464
+            }
+          ],
+          "probability": 0.08024691358024691
+        },
+        {
+          "name": "8,13",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6190476190476191
+            },
+            {
+              "name": "13",
+              "probability": 0.38095238095238093
+            }
+          ],
+          "probability": 0.030864197530864196
+        }
+      ],
+      "probability": 0.08275762981765065
+    },
+    {
+      "name": "1,8,12,4",
+      "children": [
+        {
+          "name": "1,12",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9230769230769231
+            },
+            {
+              "name": "12",
+              "probability": 0.07692307692307693
+            }
+          ],
+          "probability": 0.2222222222222222
+        },
+        {
+          "name": "1,4",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8
+            },
+            {
+              "name": "4",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.6666666666666666
+        },
+        {
+          "name": "8,12",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6
+            },
+            {
+              "name": "12",
+              "probability": 0.4
+            }
+          ],
+          "probability": 0.027777777777777776
+        },
+        {
+          "name": "8,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6666666666666666
+            },
+            {
+              "name": "8",
+              "probability": 0.3333333333333333
+            }
+          ],
+          "probability": 0.08333333333333333
+        }
+      ],
+      "probability": 0.11206762371140193
+    },
+    {
+      "name": "1,8,12,13",
+      "children": [
+        {
+          "name": "1,12",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9230769230769231
+            },
+            {
+              "name": "12",
+              "probability": 0.07692307692307693
+            }
+          ],
+          "probability": 0.4622222222222222
+        },
+        {
+          "name": "1,13",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9285714285714286
+            },
+            {
+              "name": "13",
+              "probability": 0.07142857142857142
+            }
+          ],
+          "probability": 0.42666666666666664
+        },
+        {
+          "name": "8,12",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6
+            },
+            {
+              "name": "12",
+              "probability": 0.4
+            }
+          ],
+          "probability": 0.057777777777777775
+        },
+        {
+          "name": "8,13",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6190476190476191
+            },
+            {
+              "name": "13",
+              "probability": 0.38095238095238093
+            }
+          ],
+          "probability": 0.05333333333333333
+        }
+      ],
+      "probability": 0.03448234575735444
+    },
+    {
+      "name": "1,9,5,4",
+      "children": [
+        {
+          "name": "1,5",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8333333333333334
+            },
+            {
+              "name": "5",
+              "probability": 0.16666666666666666
+            }
+          ],
+          "probability": 0.39999999999999997
+        },
+        {
+          "name": "1,4",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8
+            },
+            {
+              "name": "4",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.5
+        },
+        {
+          "name": "9,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6428571428571429
+            },
+            {
+              "name": "9",
+              "probability": 0.35714285714285715
+            }
+          ],
+          "probability": 0.044444444444444446
+        },
+        {
+          "name": "9,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6923076923076923
+            },
+            {
+              "name": "9",
+              "probability": 0.3076923076923077
+            }
+          ],
+          "probability": 0.05555555555555556
+        }
+      ],
+      "probability": 0.2390775972509908
+    },
+    {
+      "name": "1,9,5,13",
+      "children": [
+        {
+          "name": "1,5",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8333333333333334
+            },
+            {
+              "name": "5",
+              "probability": 0.16666666666666666
+            }
+          ],
+          "probability": 0.65
+        },
+        {
+          "name": "1,13",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9285714285714286
+            },
+            {
+              "name": "13",
+              "probability": 0.07142857142857142
+            }
+          ],
+          "probability": 0.25
+        },
+        {
+          "name": "9,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6428571428571429
+            },
+            {
+              "name": "9",
+              "probability": 0.35714285714285715
+            }
+          ],
+          "probability": 0.07222222222222223
+        },
+        {
+          "name": "9,13",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5909090909090909
+            },
+            {
+              "name": "13",
+              "probability": 0.4090909090909091
+            }
+          ],
+          "probability": 0.02777777777777778
+        }
+      ],
+      "probability": 0.07356233761568948
+    },
+    {
+      "name": "1,9,12,4",
+      "children": [
+        {
+          "name": "1,12",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9230769230769231
+            },
+            {
+              "name": "12",
+              "probability": 0.07692307692307693
+            }
+          ],
+          "probability": 0.225
+        },
+        {
+          "name": "1,4",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.8
+            },
+            {
+              "name": "4",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.675
+        },
+        {
+          "name": "9,12",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "12",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.025
+        },
+        {
+          "name": "9,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6923076923076923
+            },
+            {
+              "name": "9",
+              "probability": 0.3076923076923077
+            }
+          ],
+          "probability": 0.07500000000000001
+        }
+      ],
+      "probability": 0.09961566552124616
+    },
+    {
+      "name": "1,9,12,13",
+      "children": [
+        {
+          "name": "1,12",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9230769230769231
+            },
+            {
+              "name": "12",
+              "probability": 0.07692307692307693
+            }
+          ],
+          "probability": 0.468
+        },
+        {
+          "name": "1,13",
+          "children": [
+            {
+              "name": "1",
+              "probability": 0.9285714285714286
+            },
+            {
+              "name": "13",
+              "probability": 0.07142857142857142
+            }
+          ],
+          "probability": 0.432
+        },
+        {
+          "name": "9,12",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "12",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.052000000000000005
+        },
+        {
+          "name": "9,13",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5909090909090909
+            },
+            {
+              "name": "13",
+              "probability": 0.4090909090909091
+            }
+          ],
+          "probability": 0.048
+        }
+      ],
+      "probability": 0.030650974006537282
+    },
+    {
+      "name": "16,8,5,4",
+      "children": [
+        {
+          "name": "16,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.7619047619047619
+            },
+            {
+              "name": "16",
+              "probability": 0.23809523809523808
+            }
+          ],
+          "probability": 0.14814814814814814
+        },
+        {
+          "name": "16,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.8
+            },
+            {
+              "name": "16",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.18518518518518517
+        },
+        {
+          "name": "8,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6153846153846154
+            },
+            {
+              "name": "8",
+              "probability": 0.38461538461538464
+            }
+          ],
+          "probability": 0.2962962962962963
+        },
+        {
+          "name": "8,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6666666666666666
+            },
+            {
+              "name": "8",
+              "probability": 0.3333333333333333
+            }
+          ],
+          "probability": 0.37037037037037035
+        }
+      ],
+      "probability": 0.01681014355671029
+    },
+    {
+      "name": "16,8,5,13",
+      "children": [
+        {
+          "name": "16,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.7619047619047619
+            },
+            {
+              "name": "16",
+              "probability": 0.23809523809523808
+            }
+          ],
+          "probability": 0.24074074074074073
+        },
+        {
+          "name": "16,13",
+          "children": [
+            {
+              "name": "13",
+              "probability": 0.5517241379310345
+            },
+            {
+              "name": "16",
+              "probability": 0.4482758620689655
+            }
+          ],
+          "probability": 0.09259259259259259
+        },
+        {
+          "name": "8,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6153846153846154
+            },
+            {
+              "name": "8",
+              "probability": 0.38461538461538464
+            }
+          ],
+          "probability": 0.48148148148148145
+        },
+        {
+          "name": "8,13",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6190476190476191
+            },
+            {
+              "name": "13",
+              "probability": 0.38095238095238093
+            }
+          ],
+          "probability": 0.18518518518518517
+        }
+      ],
+      "probability": 0.005172351863603166
+    },
+    {
+      "name": "16,8,12,4",
+      "children": [
+        {
+          "name": "16,12",
+          "children": [
+            {
+              "name": "12",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "16",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.08333333333333333
+        },
+        {
+          "name": "16,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.8
+            },
+            {
+              "name": "16",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.25
+        },
+        {
+          "name": "8,12",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6
+            },
+            {
+              "name": "12",
+              "probability": 0.4
+            }
+          ],
+          "probability": 0.16666666666666666
+        },
+        {
+          "name": "8,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6666666666666666
+            },
+            {
+              "name": "8",
+              "probability": 0.3333333333333333
+            }
+          ],
+          "probability": 0.5
+        }
+      ],
+      "probability": 0.0070042264819626205
+    },
+    {
+      "name": "16,8,12,13",
+      "children": [
+        {
+          "name": "16,12",
+          "children": [
+            {
+              "name": "12",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "16",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.17333333333333334
+        },
+        {
+          "name": "16,13",
+          "children": [
+            {
+              "name": "13",
+              "probability": 0.5517241379310345
+            },
+            {
+              "name": "16",
+              "probability": 0.4482758620689655
+            }
+          ],
+          "probability": 0.15999999999999998
+        },
+        {
+          "name": "8,12",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6
+            },
+            {
+              "name": "12",
+              "probability": 0.4
+            }
+          ],
+          "probability": 0.3466666666666667
+        },
+        {
+          "name": "8,13",
+          "children": [
+            {
+              "name": "8",
+              "probability": 0.6190476190476191
+            },
+            {
+              "name": "13",
+              "probability": 0.38095238095238093
+            }
+          ],
+          "probability": 0.31999999999999995
+        }
+      ],
+      "probability": 0.0021551466098346525
+    },
+    {
+      "name": "16,9,5,4",
+      "children": [
+        {
+          "name": "16,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.7619047619047619
+            },
+            {
+              "name": "16",
+              "probability": 0.23809523809523808
+            }
+          ],
+          "probability": 0.15999999999999998
+        },
+        {
+          "name": "16,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.8
+            },
+            {
+              "name": "16",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.2
+        },
+        {
+          "name": "9,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6428571428571429
+            },
+            {
+              "name": "9",
+              "probability": 0.35714285714285715
+            }
+          ],
+          "probability": 0.28444444444444444
+        },
+        {
+          "name": "9,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6923076923076923
+            },
+            {
+              "name": "9",
+              "probability": 0.3076923076923077
+            }
+          ],
+          "probability": 0.35555555555555557
+        }
+      ],
+      "probability": 0.014942349828186924
+    },
+    {
+      "name": "16,9,5,13",
+      "children": [
+        {
+          "name": "16,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.7619047619047619
+            },
+            {
+              "name": "16",
+              "probability": 0.23809523809523808
+            }
+          ],
+          "probability": 0.26
+        },
+        {
+          "name": "16,13",
+          "children": [
+            {
+              "name": "13",
+              "probability": 0.5517241379310345
+            },
+            {
+              "name": "16",
+              "probability": 0.4482758620689655
+            }
+          ],
+          "probability": 0.1
+        },
+        {
+          "name": "9,5",
+          "children": [
+            {
+              "name": "5",
+              "probability": 0.6428571428571429
+            },
+            {
+              "name": "9",
+              "probability": 0.35714285714285715
+            }
+          ],
+          "probability": 0.4622222222222222
+        },
+        {
+          "name": "9,13",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5909090909090909
+            },
+            {
+              "name": "13",
+              "probability": 0.4090909090909091
+            }
+          ],
+          "probability": 0.17777777777777778
+        }
+      ],
+      "probability": 0.004597646100980592
+    },
+    {
+      "name": "16,9,12,4",
+      "children": [
+        {
+          "name": "16,12",
+          "children": [
+            {
+              "name": "12",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "16",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.09
+        },
+        {
+          "name": "16,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.8
+            },
+            {
+              "name": "16",
+              "probability": 0.2
+            }
+          ],
+          "probability": 0.27
+        },
+        {
+          "name": "9,12",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "12",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.16
+        },
+        {
+          "name": "9,4",
+          "children": [
+            {
+              "name": "4",
+              "probability": 0.6923076923076923
+            },
+            {
+              "name": "9",
+              "probability": 0.3076923076923077
+            }
+          ],
+          "probability": 0.48
+        }
+      ],
+      "probability": 0.006225979095077885
+    },
+    {
+      "name": "16,9,12,13",
+      "children": [
+        {
+          "name": "16,12",
+          "children": [
+            {
+              "name": "12",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "16",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.1872
+        },
+        {
+          "name": "16,13",
+          "children": [
+            {
+              "name": "13",
+              "probability": 0.5517241379310345
+            },
+            {
+              "name": "16",
+              "probability": 0.4482758620689655
+            }
+          ],
+          "probability": 0.17279999999999998
+        },
+        {
+          "name": "9,12",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5714285714285714
+            },
+            {
+              "name": "12",
+              "probability": 0.42857142857142855
+            }
+          ],
+          "probability": 0.33280000000000004
+        },
+        {
+          "name": "9,13",
+          "children": [
+            {
+              "name": "9",
+              "probability": 0.5909090909090909
+            },
+            {
+              "name": "13",
+              "probability": 0.4090909090909091
+            }
+          ],
+          "probability": 0.3072
+        }
+      ],
+      "probability": 0.0019156858754085801
+    }
+  ]
+}
